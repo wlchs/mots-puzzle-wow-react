@@ -1,6 +1,7 @@
 {
   "name": "mots-puzzle-wow-react",
   "version": "0.1.0",
+  "repository": "https://github.com/wlchs/mots-puzzle-wow-react",
   "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
