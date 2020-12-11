@@ -4,6 +4,10 @@
 
 [![NPM](https://img.shields.io/npm/v/mots-puzzle-wow-react.svg)](https://www.npmjs.com/package/mots-puzzle-wow-react) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
+![demo image](public/demo.png)
+
+[Click here to try!](https://wlchs.github.io/mots-puzzle-wow-react/)
+
 ## Install
 
 ```bash
