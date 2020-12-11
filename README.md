@@ -31,6 +31,9 @@ function Example() {
 }
 ```
 
+## Resources
+Images downloaded from [https://mythictrap.com](https://mythictrap.com)
+
 ## License
 
 MIT © [wlchs](https://github.com/wlchs)
