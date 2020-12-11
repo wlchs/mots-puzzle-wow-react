@@ -1,6 +1,6 @@
 import Trait from './Trait';
 
-const ShapeState = Object.freeze({
+export const ShapeState = Object.freeze({
   Leaf: Symbol('Leaf'),
   Flower: Symbol('Flower'),
 });
@@ -14,7 +14,7 @@ class Shape extends Trait {
    */
   constructor() {
     super();
-    this.options = Object.keys(ShapeState);
+    this.options = Object.values(ShapeState);
   }
 }
 

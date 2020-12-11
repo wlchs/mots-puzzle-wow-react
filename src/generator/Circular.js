@@ -1,8 +1,8 @@
 import Trait from './Trait';
 
-const CircularState = Object.freeze({
-  Circular: Symbol('Circular'),
-  NonCircular: Symbol('NonCircular'),
+export const CircularState = Object.freeze({
+  Circular: Symbol('Circled'),
+  NonCircular: Symbol('Not circled'),
 });
 
 /**
@@ -14,7 +14,7 @@ class Circular extends Trait {
    */
   constructor() {
     super();
-    this.options = Object.keys(CircularState);
+    this.options = Object.values(CircularState);
   }
 }
 

@@ -39,7 +39,15 @@ class Trait {
    * @returns {string}
    */
   toString() {
-    return this.options[this.selectedOption].toString();
+    return this.state().toString();
+  }
+
+  /**
+   * Return raw trait object value
+   * @returns {*}
+   */
+  state() {
+    return this.options[this.selectedOption];
   }
 
   /**

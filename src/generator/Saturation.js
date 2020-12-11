@@ -1,8 +1,8 @@
 import Trait from './Trait';
 
-const SaturationState = Object.freeze({
-  Saturated: Symbol('Saturated'),
-  NonSaturated: Symbol('NonSaturated'),
+export const SaturationState = Object.freeze({
+  Saturated: Symbol('Full'),
+  NonSaturated: Symbol('Empty'),
 });
 
 /**
@@ -14,7 +14,7 @@ class Saturation extends Trait {
    */
   constructor() {
     super();
-    this.options = Object.keys(SaturationState);
+    this.options = Object.values(SaturationState);
   }
 }
 
