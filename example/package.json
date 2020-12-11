@@ -1,6 +1,6 @@
 {
   "name": "mots-puzzle-wow-react-example",
-  "homepage": ".",
+  "homepage": "https://wlchs.github.io/mots-puzzle-wow-react/",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -13,7 +13,7 @@
     "react": "link:../node_modules/react",
     "react-dom": "link:../node_modules/react-dom",
     "react-scripts": "link:../node_modules/react-scripts",
-    "mots-puzzle-wow-react": "link:.."
+    "mots-puzzle-wow-react": "link:../dist"
   },
   "devDependencies": {
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3"

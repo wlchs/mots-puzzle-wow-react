@@ -40,24 +40,17 @@ function generatePuzzle() {
   /*
    * Generate trait map
    */
-  const traitMap = [...Array(3).keys()].map((i) => {
-    switch (i) {
-      case 0:
-        return [...Array(4).keys()].map(() => new Circular());
-      case 1:
-        return [...Array(4).keys()].map(() => new Saturation());
-      case 2:
-        return [...Array(4).keys()].map(() => new Shape());
-      default:
-        throw new Error('Trait map out of bounds!');
-    }
-  });
+  const traitMap = [
+    [new Circular(), new Circular(), new Circular(), new Circular()],
+    [new Saturation(), new Saturation(), new Saturation(), new Saturation()],
+    [new Shape(), new Shape(), new Shape(), new Shape()],
+  ];
 
   /*
    * Shuffle traits
    */
   for (let trait = 0; trait < 3; trait += 1) {
-    shuffle([...Array(4).keys()]).forEach((entity, i) => {
+    shuffle([0, 1, 2, 3]).forEach((entity, i) => {
       traitMap[trait][entity].selectOption(i % 2);
     });
   }
@@ -80,7 +73,7 @@ function generatePuzzle() {
   /*
    * Assign unique trait
    */
-  [...Array(4).keys()].forEach((i) => {
+  [0, 1, 2, 3].forEach((i) => {
     if (i === uniqueEntityId) {
       traitMap[uniqueTraitId][i].selectOption(uniqueTraitValueId);
       traitMap[uniqueTraitId][i].setUnique();
