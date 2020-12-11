@@ -19,15 +19,11 @@ yarn add mots-puzzle-wow-react
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
-
+import React from 'react'
 import Puzzle from 'mots-puzzle-wow-react'
-import 'mots-puzzle-wow-react/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <Puzzle />
-  }
+function Example() {
+  return <Puzzle />
 }
 ```
 
