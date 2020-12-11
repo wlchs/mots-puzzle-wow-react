@@ -55,10 +55,18 @@ Guess.propTypes = {
   reset: PropTypes.func.isRequired,
 };
 
-function Puzzle() {
+function Puzzle(props) {
+  /*
+   * Create state
+   */
   const [guess, setGuess] = useState(-1);
   const [display, setDisplay] = useState(-1);
   const [puzzle, setPuzzle] = useState(null);
+
+  /*
+   * Parse props
+   */
+  const { easy } = props;
 
   const regeneratePuzzle = () => {
     setGuess(-1);
@@ -86,12 +94,20 @@ function Puzzle() {
             key={e.id}
             onClick={() => setGuess(i)}
             onMouseOver={() => setDisplay(i)}
-            visible={display === i}
+            visible={display === i || easy}
           />
         ))
       )}
     </div>
   );
 }
+
+Puzzle.propTypes = {
+  easy: PropTypes.bool,
+};
+
+Puzzle.defaultProps = {
+  easy: false,
+};
 
 export default Puzzle;
