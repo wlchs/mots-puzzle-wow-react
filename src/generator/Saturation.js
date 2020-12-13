@@ -11,9 +11,10 @@ export const SaturationState = Object.freeze({
 class Saturation extends Trait {
   /**
    * Initialize option set
+   * @param selectedOption
    */
-  constructor() {
-    super();
+  constructor(selectedOption) {
+    super(selectedOption);
     this.options = Object.values(SaturationState);
   }
 }

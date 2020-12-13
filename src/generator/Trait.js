@@ -4,10 +4,11 @@
 class Trait {
   /**
    * Initialize option array and selected option pointer
+   * @param selectedOption
    */
-  constructor() {
+  constructor(selectedOption) {
     this.options = [];
-    this.selectedOption = -1;
+    this.selectedOption = selectedOption || -1;
   }
 
   /**

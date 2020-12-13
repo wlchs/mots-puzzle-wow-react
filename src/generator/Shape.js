@@ -11,9 +11,10 @@ export const ShapeState = Object.freeze({
 class Shape extends Trait {
   /**
    * Initialize option set
+   * @param selectedOption
    */
-  constructor() {
-    super();
+  constructor(selectedOption) {
+    super(selectedOption);
     this.options = Object.values(ShapeState);
   }
 }

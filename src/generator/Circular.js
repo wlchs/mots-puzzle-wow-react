@@ -11,9 +11,10 @@ export const CircularState = Object.freeze({
 class Circular extends Trait {
   /**
    * Initialize option set
+   * @param selectedOption
    */
-  constructor() {
-    super();
+  constructor(selectedOption) {
+    super(selectedOption);
     this.options = Object.values(CircularState);
   }
 }
