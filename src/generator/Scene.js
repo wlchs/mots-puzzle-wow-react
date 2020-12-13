@@ -24,6 +24,14 @@ class Scene {
   getEntities() {
     return this.entities;
   }
+
+  /**
+   * Set entity container
+   * @param entities
+   */
+  setEntities(entities) {
+    this.entities = entities;
+  }
 }
 
 export default Scene;
