@@ -21,6 +21,16 @@ class Entity {
   }
 
   /**
+   * Add multiple traits to trait container
+   * @param traits
+   */
+  addTraits(traits) {
+    for (const trait of traits) {
+      this.addTrait(trait);
+    }
+  }
+
+  /**
    * Get the trait container
    * @returns {Trait[]} Trait container
    */
