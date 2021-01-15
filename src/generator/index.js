@@ -192,10 +192,13 @@ export function generatePuzzleV2() {
   );
 
   /**
-   * Pick the other three entities randomly
+   * Pick the other three entities such that there is an exact match for each
+   * trait that is not the unique one.
    * @type {Entity[]}
    */
-  const otherEntities = shuffle(remainingVertices).slice(0, 3);
+  const otherEntities = remainingVertices.filter(
+    (v) => v.similarity(uniqueEntity) !== 2,
+  );
 
   /*
    * Assign entity set
