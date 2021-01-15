@@ -24,6 +24,21 @@ class SceneValidator {
     }
 
     /*
+     * There must be exactly one unique-marked trait in the scene
+     */
+    let uniqueCounter = 0;
+
+    for (const entity of entities) {
+      for (const trait of entity.traits) {
+        uniqueCounter += trait.unique ? 1 : 0;
+      }
+    }
+
+    if (uniqueCounter !== 1) {
+      return false;
+    }
+
+    /*
      * If the total number is correct, validate each entity.
      */
     return entities.every(EntityValidator.validate);
