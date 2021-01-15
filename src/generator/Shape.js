@@ -14,8 +14,7 @@ class Shape extends Trait {
    * @param selectedOption
    */
   constructor(selectedOption) {
-    super(selectedOption);
-    this.options = Object.values(ShapeState);
+    super(Object.values(ShapeState), selectedOption);
   }
 }
 

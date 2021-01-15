@@ -14,8 +14,7 @@ class Saturation extends Trait {
    * @param selectedOption
    */
   constructor(selectedOption) {
-    super(selectedOption);
-    this.options = Object.values(SaturationState);
+    super(Object.values(SaturationState), selectedOption);
   }
 }
 

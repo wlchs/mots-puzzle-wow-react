@@ -4,11 +4,13 @@
 class Trait {
   /**
    * Initialize option array and selected option pointer
-   * @param selectedOption
+   * @param options {*[]} Possible options' list
+   * @param selectedOption {number} Selected option index
    */
-  constructor(selectedOption) {
-    this.options = [];
-    this.selectedOption = selectedOption || -1;
+  constructor(options, selectedOption) {
+    this.options = options || [];
+    this.selectedOption = selectedOption === undefined ? -1 : selectedOption;
+    this.unique = false;
   }
 
   /**
@@ -48,6 +50,9 @@ class Trait {
    * @returns {*}
    */
   state() {
+    if (this.options.length === 0 || this.selectedOption < 0) {
+      throw new Error('Invalid trait state!');
+    }
     return this.options[this.selectedOption];
   }
 

@@ -14,8 +14,7 @@ class Circular extends Trait {
    * @param selectedOption
    */
   constructor(selectedOption) {
-    super(selectedOption);
-    this.options = Object.values(CircularState);
+    super(Object.values(CircularState), selectedOption);
   }
 }
 
