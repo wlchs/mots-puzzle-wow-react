@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7e4d2e35bcd21f1d7f0a44a388ef7ff0",
+    "revision": "6dea4e744d33ffd424f04318625f7b5c",
     "url": "/mots-puzzle-wow-react/index.html"
   },
   {
-    "revision": "4d40c811c078ff0e1fa1",
+    "revision": "bbf611b0edaecdb0fd88",
     "url": "/mots-puzzle-wow-react/static/css/main.b6bbbb9b.chunk.css"
   },
   {
@@ -16,12 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/mots-puzzle-wow-react/static/js/2.146e1904.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4d40c811c078ff0e1fa1",
-    "url": "/mots-puzzle-wow-react/static/js/main.84e4c324.chunk.js"
+    "revision": "bbf611b0edaecdb0fd88",
+    "url": "/mots-puzzle-wow-react/static/js/main.250bb561.chunk.js"
   },
   {
     "revision": "6fce53c7c7713ebf61712cc2929746fa",
-    "url": "/mots-puzzle-wow-react/static/js/main.84e4c324.chunk.js.LICENSE.txt"
+    "url": "/mots-puzzle-wow-react/static/js/main.250bb561.chunk.js.LICENSE.txt"
   },
   {
     "revision": "495faa04586b80089223",

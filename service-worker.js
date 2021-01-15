@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/mots-puzzle-wow-react/precache-manifest.71663c3e3af56d74071c0acd8caf8a55.js"
+  "/mots-puzzle-wow-react/precache-manifest.c39556989ade86290e624e18ca0d9601.js"
 );
 
 self.addEventListener('message', (event) => {

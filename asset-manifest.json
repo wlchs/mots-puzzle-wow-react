@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/mots-puzzle-wow-react/static/css/main.b6bbbb9b.chunk.css",
-    "main.js": "/mots-puzzle-wow-react/static/js/main.84e4c324.chunk.js",
-    "main.js.map": "/mots-puzzle-wow-react/static/js/main.84e4c324.chunk.js.map",
+    "main.js": "/mots-puzzle-wow-react/static/js/main.250bb561.chunk.js",
+    "main.js.map": "/mots-puzzle-wow-react/static/js/main.250bb561.chunk.js.map",
     "runtime-main.js": "/mots-puzzle-wow-react/static/js/runtime-main.2f201a73.js",
     "runtime-main.js.map": "/mots-puzzle-wow-react/static/js/runtime-main.2f201a73.js.map",
     "static/js/2.146e1904.chunk.js": "/mots-puzzle-wow-react/static/js/2.146e1904.chunk.js",
     "static/js/2.146e1904.chunk.js.map": "/mots-puzzle-wow-react/static/js/2.146e1904.chunk.js.map",
     "index.html": "/mots-puzzle-wow-react/index.html",
-    "precache-manifest.71663c3e3af56d74071c0acd8caf8a55.js": "/mots-puzzle-wow-react/precache-manifest.71663c3e3af56d74071c0acd8caf8a55.js",
+    "precache-manifest.c39556989ade86290e624e18ca0d9601.js": "/mots-puzzle-wow-react/precache-manifest.c39556989ade86290e624e18ca0d9601.js",
     "service-worker.js": "/mots-puzzle-wow-react/service-worker.js",
     "static/css/main.b6bbbb9b.chunk.css.map": "/mots-puzzle-wow-react/static/css/main.b6bbbb9b.chunk.css.map",
     "static/js/2.146e1904.chunk.js.LICENSE.txt": "/mots-puzzle-wow-react/static/js/2.146e1904.chunk.js.LICENSE.txt",
-    "static/js/main.84e4c324.chunk.js.LICENSE.txt": "/mots-puzzle-wow-react/static/js/main.84e4c324.chunk.js.LICENSE.txt",
+    "static/js/main.250bb561.chunk.js.LICENSE.txt": "/mots-puzzle-wow-react/static/js/main.250bb561.chunk.js.LICENSE.txt",
     "static/media/CircledFlowerEmpty~KNluyzpq.png": "/mots-puzzle-wow-react/static/media/CircledFlowerEmpty~KNluyzpq.f37a309d.png",
     "static/media/CircledFlowerFull~bfAqQDSQ.png": "/mots-puzzle-wow-react/static/media/CircledFlowerFull~bfAqQDSQ.dfd139c0.png",
     "static/media/CircledLeafEmpty~NnYaOUhZ.png": "/mots-puzzle-wow-react/static/media/CircledLeafEmpty~NnYaOUhZ.0656893d.png",
@@ -27,6 +27,6 @@
     "static/js/runtime-main.2f201a73.js",
     "static/js/2.146e1904.chunk.js",
     "static/css/main.b6bbbb9b.chunk.css",
-    "static/js/main.84e4c324.chunk.js"
+    "static/js/main.250bb561.chunk.js"
   ]
 }
