@@ -6,9 +6,10 @@ import { v1 } from 'uuid';
 class Entity {
   /**
    * Initialize trait container
+   * @param traits {Trait[]?} Trait list
    */
-  constructor() {
-    this.traits = [];
+  constructor(traits) {
+    this.traits = traits || [];
     this.id = v1();
   }
 
@@ -36,6 +37,50 @@ class Entity {
    */
   getTraits() {
     return this.traits;
+  }
+
+  /**
+   * Compare entity to another one and count common traits
+   * @param otherEntity {Entity}
+   * @returns {number}
+   */
+  similarity(otherEntity) {
+    /**
+     * Matching trait counter
+     * @type {number}
+     */
+    let matchingTraits = 0;
+
+    /**
+     * Get other entity's traits
+     * @type {Trait[]}
+     */
+    const otherTraits = otherEntity.getTraits();
+
+    /**
+     * Iterate over current entity's traits
+     */
+    for (const trait of this.traits) {
+      /**
+       * Iterate over other entity's traits
+       */
+      for (const otherTrait of otherTraits) {
+        /**
+         * If two traits are of common type and of equal value,
+         * increment matching trait counter
+         */
+        if (
+          Object.prototype.toString.call(trait) ===
+            Object.prototype.toString.call(otherTrait) &&
+          trait.state() === otherTrait.state()
+        ) {
+          matchingTraits += 1;
+          break;
+        }
+      }
+    }
+
+    return matchingTraits;
   }
 }
 
