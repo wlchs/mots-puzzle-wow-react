@@ -1,6 +1,6 @@
 {
   "name": "mots-puzzle-wow-react",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Simple React component to practice the MoTS dungeon puzzle in World of Warcraft: Shadowlands",
   "author": "wlchs",
   "license": "MIT",
