@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import * as styles from './styles.js';
-import generatePuzzle from './generator';
+import { generatePuzzleV2 } from './generator';
 import PuzzleTile from './PuzzleTile.jsx';
 import Scene from './generator/Scene';
 
@@ -70,7 +70,7 @@ function Puzzle(props) {
 
   const regeneratePuzzle = () => {
     setGuess(-1);
-    setPuzzle(generatePuzzle());
+    setPuzzle(generatePuzzleV2());
   };
 
   useEffect(() => {
