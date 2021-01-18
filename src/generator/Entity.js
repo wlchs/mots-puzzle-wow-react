@@ -1,5 +1,3 @@
-import { v1 } from 'uuid';
-
 /**
  * Class representing a single entity of the puzzle
  */
@@ -9,13 +7,16 @@ class Entity {
    * @param traits {Trait[]?} Trait list
    */
   constructor(traits) {
+    /**
+     * Assign trait array or initialize with empty array if not available.
+     * @type {Trait[]}
+     */
     this.traits = traits || [];
-    this.id = v1();
   }
 
   /**
    * Add trait to the trait container
-   * @param trait Trait to be added
+   * @param trait {Trait} Trait to be added
    */
   addTrait(trait) {
     this.traits.push(trait);
@@ -23,7 +24,7 @@ class Entity {
 
   /**
    * Add multiple traits to trait container
-   * @param traits
+   * @param traits {Trait[]}
    */
   addTraits(traits) {
     for (const trait of traits) {
@@ -81,6 +82,17 @@ class Entity {
     }
 
     return matchingTraits;
+  }
+
+  /**
+   * Generate unique ID based on trait array
+   * @return {string}
+   */
+  id() {
+    return this.traits
+      .map((t) => t.toString())
+      .sort()
+      .join(', ');
   }
 }
 

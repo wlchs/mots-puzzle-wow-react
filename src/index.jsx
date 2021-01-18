@@ -81,6 +81,10 @@ function Puzzle(props) {
     return <div />;
   }
 
+  /**
+   * Get entity array
+   * @type {Entity[]}
+   */
   const entities = puzzle.getEntities();
 
   return (
@@ -91,7 +95,7 @@ function Puzzle(props) {
         entities.map((e, i) => (
           <PuzzleTile
             entity={e}
-            key={e.id}
+            key={e.id()}
             onClick={() => setGuess(i)}
             onMouseOver={() => setDisplay(i)}
             visible={display === i || easy}
