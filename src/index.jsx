@@ -5,12 +5,10 @@ import { generatePuzzleV2 } from './generator';
 import PuzzleTile from './PuzzleTile.jsx';
 import Scene from './generator/Scene';
 
-function CorrectGuess(props) {
-  const { reset } = props;
+function CorrectGuess({ reset }) {
   return (
     <div style={styles.guessButton} onClick={reset} onKeyPress={reset}>
-      <div>Correct guess</div>
-      <div>Click to try again!</div>
+      <div>Correct guess!</div>
     </div>
   );
 }
@@ -19,13 +17,10 @@ CorrectGuess.propTypes = {
   reset: PropTypes.func.isRequired,
 };
 
-function IncorrectGuess(props) {
-  const { reset } = props;
-
+function IncorrectGuess({ reset }) {
   return (
     <div style={styles.guessButton} onClick={reset} onKeyPress={reset}>
-      <div>Wrong guess</div>
-      <div>Click to try again!</div>
+      <div>Wrong guess!</div>
     </div>
   );
 }
@@ -34,8 +29,7 @@ IncorrectGuess.propTypes = {
   reset: PropTypes.func.isRequired,
 };
 
-function Guess(props) {
-  const { guess, puzzle, reset } = props;
+function Guess({ guess, puzzle, reset }) {
   const entities = puzzle.getEntities();
 
   if (guess !== -1) {
@@ -55,18 +49,13 @@ Guess.propTypes = {
   reset: PropTypes.func.isRequired,
 };
 
-function Puzzle(props) {
+function Puzzle({ easy }) {
   /*
    * Create state
    */
   const [guess, setGuess] = useState(-1);
   const [display, setDisplay] = useState(-1);
   const [puzzle, setPuzzle] = useState(null);
-
-  /*
-   * Parse props
-   */
-  const { easy } = props;
 
   const regeneratePuzzle = () => {
     setGuess(-1);
